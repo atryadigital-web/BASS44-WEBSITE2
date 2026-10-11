@@ -1,5 +1,6 @@
 import { categories, contact } from "../data";
 import { PhoneIcon } from "./Header";
+import { LOGO_URL } from "../lib";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="f-brand">
           <a className="f-logo" href={contact.site} target="_blank" rel="noreferrer" aria-label="آتریا الکترونیک">
-            <img src="https://www.atrya.ir/wp-content/uploads/2019/08/atrya-logo2-min.png" alt="لوگوی آتریا الکترونیک" height={96} />
+            <img src={LOGO_URL} alt="لوگوی آتریا الکترونیک" height={96} />
           </a>
           <p>فروشگاه آنلاین تجهیزات روشنایی آتریا الکترونیک؛ ال ای دی، منبع تغذیه، فلاشر و لوازم دیجیتال با کیفیت و قیمت مناسب.</p>
           <a className="btn btn-primary" href={contact.telegram} target="_blank" rel="noreferrer">

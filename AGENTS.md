@@ -13,8 +13,8 @@ preview needs internet access to atrya.ir from the *browser*. The sandbox itself
 content was gathered via the fetch tool, not scraped from the sandbox.
 
 ## Known gaps (need the owner's input)
-- **Logo**: the real logo file URL could not be retrieved; `src/components/Logo.tsx` is an SVG recreation
-  (orange sun-rays + "آتریا الکترونیک"). Replace with the original file when available.
+- **Logo**: header and footer hotlink the real logo from atrya.ir (`LOGO_URL` in `src/lib.ts`). The sandbox cannot fetch it, so
+  it cannot be bundled automatically; ask the owner for the file if a local copy is wanted.
 - **Street address**: no verified address was found on atrya.ir, so none is shown. Add it in `src/components/Footer.tsx`.
 - Cart is client-side only (counter in header); there is no checkout. Product/category/article links open atrya.ir.
 

@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { contact, navLinks, topLinks } from "../data";
 import { useCart } from "../cart";
-import { toFa } from "../lib";
-import Logo from "./Logo";
+import { LOGO_URL, toFa } from "../lib";
 
 export default function Header() {
   const { count } = useCart();
@@ -42,7 +41,7 @@ export default function Header() {
       <div className="mainbar">
         <div className="container mainbar-inner">
           <a href="#top" className="brand" aria-label="آتریا الکترونیک - صفحه نخست">
-            <Logo size={56} />
+            <img src={LOGO_URL} alt="آتریا الکترونیک" />
           </a>
 
           <nav className={"main-nav" + (open ? " open" : "")} aria-label="منوی اصلی">
