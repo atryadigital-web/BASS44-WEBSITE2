@@ -185,7 +185,10 @@ button { cursor: pointer; }
 .phones a { display: inline-flex; align-items: center; gap: 10px; padding: 6px 0; font-weight: 700; font-size: 1.05rem; color: #fff; }
 .phones svg { color: var(--orange); }
 .muted { margin-top: 14px; color: #8f98ad; }
-.copy { border-top: 1px solid rgba(255, 255, 255, .08); padding: 16px 0; font-size: .85rem; color: #8f98ad; text-align: center; }
+.copy { border-top: 1px solid rgba(255, 255, 255, .08); padding: 16px 0; font-size: .85rem; color: #8f98ad; }
+.copy-inner { display: flex; align-items: center; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; }
+.credit { color: #cbd2e1; font-weight: 600; }
+@media (max-width: 640px) { .copy-inner { justify-content: center; text-align: center; } }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1020px) {

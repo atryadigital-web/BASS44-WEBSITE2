@@ -47,7 +47,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="copy">
-        <div className="container">© {new Date().getFullYear().toLocaleString("fa-IR", { useGrouping: false })} کلیه حقوق برای آتریا الکترونیک محفوظ است.</div>
+        <div className="container copy-inner">
+          <span>© {new Date().getFullYear().toLocaleString("fa-IR", { useGrouping: false })} کلیه حقوق برای آتریا الکترونیک محفوظ است.</span>
+          <span className="credit">طراحی شده توسط آتریا الکترونیک</span>
+        </div>
       </div>
     </footer>
   );
