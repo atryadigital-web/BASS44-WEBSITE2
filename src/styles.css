@@ -181,6 +181,8 @@ button { cursor: pointer; }
 .footer h4 { margin: 0 0 16px; color: #fff; font-size: 1.05rem; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .footer a:hover { color: var(--orange); }
+.f-logo { display: inline-flex; background: #fff; border-radius: 16px; padding: 10px 14px; }
+.f-logo img { display: block; height: 96px; width: auto; }
 .f-brand p { max-width: 42ch; margin: 14px 0 18px; }
 .phones a { display: inline-flex; align-items: center; gap: 10px; padding: 6px 0; font-weight: 700; font-size: 1.05rem; color: #fff; }
 .phones svg { color: var(--orange); }
