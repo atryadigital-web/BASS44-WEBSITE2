@@ -182,8 +182,13 @@ button { cursor: pointer; }
 .footer h4 { margin: 0 0 16px; color: #fff; font-size: 1.05rem; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .footer a:hover { color: var(--orange); }
-.f-logo { display: inline-flex; }
+.f-logo { display: inline-flex; background: #fff; border-radius: 12px; padding: 10px; }
 .f-logo img { display: block; height: 130px; width: 130px; object-fit: contain; }
+.f-trust { display: flex; flex-wrap: wrap; align-items: stretch; gap: 16px; margin-top: 24px; }
+.f-trust-badge { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 120px; padding: 12px 10px; border-radius: 12px; background: #fff; color: var(--ink); font-size: .8rem; font-weight: 600; }
+.f-trust-badge img { object-fit: contain; }
+.f-trust-badge span { margin-top: auto; }
+.f-trust-badge .f-trust-pending { margin-block: auto; text-align: center; color: var(--ink-2); font-weight: 400; }
 .f-brand p { max-width: 42ch; margin: 14px 0 18px; }
 .cform { display: grid; gap: 10px; margin-top: 22px; }
 .cform h4 { margin: 0; }
