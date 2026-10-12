@@ -183,7 +183,7 @@ button { cursor: pointer; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .footer a:hover { color: var(--orange); }
 .f-logo { display: inline-flex; }
-.f-logo img { display: block; height: 130px; width: auto; }
+.f-logo img { display: block; height: 130px; width: 130px; object-fit: contain; }
 .f-brand p { max-width: 42ch; margin: 14px 0 18px; }
 .cform { display: grid; gap: 10px; margin-top: 22px; }
 .cform h4 { margin: 0; }
