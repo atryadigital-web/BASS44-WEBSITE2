@@ -13,8 +13,8 @@ preview needs internet access to atrya.ir from the *browser*. The sandbox itself
 content was gathered via the fetch tool, not scraped from the sandbox.
 
 ## Known gaps (need the owner's input)
-- **Logo**: header and footer hotlink the real logo from atrya.ir (`LOGO_URL` in `src/lib.ts`). The sandbox cannot fetch it, so
-  it cannot be bundled automatically; ask the owner for the file if a local copy is wanted.
+- **Logo**: the footer uses the owner's supplied logo bundled at `public/atrya-footer-logo.png`; it does not depend on atrya.ir.
+  The header still hotlinks its logo via `LOGO_URL` in `src/lib.ts`. The sandbox cannot fetch that remote header logo.
 - **Street address**: no verified address was found on atrya.ir, so none is shown. Add it in `src/components/Footer.tsx`.
 - Cart is client-side only (counter in header); there is no checkout. Product/category/article links open atrya.ir.
 
