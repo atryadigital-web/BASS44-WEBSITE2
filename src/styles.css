@@ -185,6 +185,15 @@ button { cursor: pointer; }
 .f-logo { display: inline-flex; }
 .f-logo img { display: block; height: 130px; width: auto; }
 .f-brand p { max-width: 42ch; margin: 14px 0 18px; }
+.cform { display: grid; gap: 10px; margin-top: 22px; }
+.cform h4 { margin: 0; }
+.cform-row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.cform input, .cform textarea { width: 100%; background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .16); border-radius: 10px; padding: 9px 12px; color: #fff; font-size: .9rem; resize: vertical; min-height: 40px; transition: border-color .2s, box-shadow .2s; }
+.cform textarea { min-height: 76px; }
+.cform input::placeholder, .cform textarea::placeholder { color: #8f98ad; }
+.cform input:focus, .cform textarea:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(255, 69, 0, .22); }
+.cform-foot { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.cform-ok { color: #4ade80; font-size: .85rem; font-weight: 600; }
 .phones a { display: inline-flex; align-items: center; gap: 10px; padding: 6px 0; font-weight: 700; font-size: 1.05rem; color: #fff; }
 .phones svg { color: var(--orange); }
 .muted { margin-top: 14px; color: #8f98ad; }

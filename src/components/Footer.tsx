@@ -1,5 +1,6 @@
 import { categories, contact } from "../data";
 import { PhoneIcon } from "./Header";
+import ContactForm from "./ContactForm";
 
 export default function Footer() {
   return (
@@ -45,6 +46,7 @@ export default function Footer() {
               atrya.ir
             </a>
           </p>
+          <ContactForm />
         </div>
       </div>
       <div className="copy">
